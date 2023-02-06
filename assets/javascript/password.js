@@ -1,3 +1,24 @@
+// variables
+
+var CharLength = 8;
+
+
+//arrays to store all possible symbols and letters for password when password is generated 
+
+var selectArray = [];
+
+var numbersArray = [];
+
+var specialChar = ['~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '[', ']', '{', '}', '|', '\', '/',  ';', ':', '<', '>', '?', '.', ',', ''' ];
+
+
+var lowerCaseArray = [];
+
+var upperCaseArray = [];
+
+
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
