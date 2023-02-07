@@ -114,7 +114,7 @@ function generatePassword() {
       "Between 8 and 128 characters, how long would you like your password to be?"
     );
   }
-  
+
  //ask employee if they would like uppercase, lowercase, numbers, or special characters in their password
   var wantsUpper = confirm("Would you like uppercase letters?");
   if (wantsUpper) {
@@ -122,6 +122,23 @@ function generatePassword() {
   }
   //console.log(tempCharacters);
 
+  var wantsLower = confirm("Would you like lowercase letters?");
+  if (wantsLower) {
+    tempCharacters += lowerCaseArray.join("");
+  }
+  //console.log(tempCharacters);
+
+  var wantsNumbers = confirm("Would you like numbers?");
+  if (wantsNumbers) {
+    tempCharacters += numbers.join("");
+  }
+  //console.log(tempCharacters);
+
+  var wantsSpecialCharacters = confirm("Would you like special characters?");
+  if (wantsSpecialCharacters) {
+    tempCharacters += specialChar.join("");
+  }
+  //console.log(tempCharacters)
 
 
 // Write password to the #password input
