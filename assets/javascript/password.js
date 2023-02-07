@@ -97,6 +97,19 @@ var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// call the generate password button to work
+function generatePassword() {
+  var password = "";
+  var tempCharacters = "";
+
+  var pwLength = prompt(
+    "How long would you like your password to be? Please choose a value between 8 and 128 characters."
+  );
+
+
+
+
+
 
 // Write password to the #password input
 function writePassword() {
