@@ -102,11 +102,11 @@ function generatePassword() {
   var password = "";
   var tempCharacters = "";
 
-    //ask employee to choose a password 8-128 characters in length
+  //ask employee to choose a password 8-128 characters in length
   var pwLength = prompt(
     "How long would you like your password to be? Please choose a value between 8 and 128 characters."
   );
-  
+
   //while loop--if password length is less than 8 or greater than 128 characters, then alert employee to choose a number between 8 and 128 characters in length
   while (pwLength < 8 || pwLength > 128) {
     alert("You must choose a number between 8 and 128");
@@ -115,7 +115,7 @@ function generatePassword() {
     );
   }
 
- //ask employee if they would like uppercase, lowercase, numbers, or special characters in their password
+  //ask employee if they would like uppercase, lowercase, numbers, or special characters in their password
   var wantsUpper = confirm("Would you like uppercase letters?");
   if (wantsUpper) {
     tempCharacters += upperCaseArray.join("");
@@ -152,8 +152,27 @@ function generatePassword() {
     if (wantsUpper) {
       tempCharacters += upperCaseArray.join("");
     }
-    //console.log(tempCharacters)   
+    //console.log(tempCharacters)
+
+    wantsLower = confirm("Would you like lowercase letters?");
+    if (wantsLower) {
+      tempCharacters += lowerCaseArray.join("");
+    }
+    //console.log(tempCharacters)
+
+    wantsNumbers = confirm("Would you like numbers?");
+    if (wantsNumbers) {
+      tempCharacters += numbers.join("");
+    }
+    //console.log(tempCharacters)
+
+    wantsSpecialCharacters = confirm("Would you like special characters?");
+    if (wantsSpecialCharacters) {
+      tempCharacters += specialChar.join("");
+    }
+    //console.log(tempCharacters)
   }
+  
 
 
 
