@@ -172,9 +172,8 @@ function generatePassword() {
     }
     //console.log(tempCharacters)
   }
-  
 
-
+}
 
 
 
