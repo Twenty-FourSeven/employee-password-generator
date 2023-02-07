@@ -109,7 +109,7 @@ function generatePassword() {
 
   //while loop--if password length is less than 8 or greater than 128 characters, then alert employee to choose a number between 8 and 128 characters in length
   while (pwLength < 8 || pwLength > 128) {
-    alert("You must choose a number between 8 and 128");
+    alert("Please choose a number between 8 and 128");
     pwLength = prompt(
       "Between 8 and 128 characters, how long would you like your password to be?"
     );
@@ -147,7 +147,7 @@ function generatePassword() {
     !wantsNumbers &&
     !wantsSpecialCharacters
   ) {
-    alert("You must choose at least one type of character");
+    alert("Please choose at least one type of character.");
     wantsUpper = confirm("Would you like uppercase letters?");
     if (wantsUpper) {
       tempCharacters += upperCaseArray.join("");
@@ -172,6 +172,13 @@ function generatePassword() {
     }
     //console.log(tempCharacters)
   }
+
+  for (var i = 0; i < pwLength; i++) {
+    password += tempCharacters.charAt(
+      Math.floor(Math.random() * tempCharacters.length)
+    );
+  }
+  return password;
 
 }
 
