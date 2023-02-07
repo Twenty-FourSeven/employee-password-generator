@@ -107,8 +107,18 @@ function generatePassword() {
     "How long would you like your password to be? Please choose a value between 8 and 128 characters."
   );
 
+  while (pwLength < 8 || pwLength > 128) {
+    alert("You must choose a number between 8 and 128");
+    pwLength = prompt(
+      "Between 8 and 128 characters, how long would you like your password to be?"
+    );
+  }
 
-
+  var wantsUpper = confirm("Would you like uppercase letters?");
+  if (wantsUpper) {
+    tempCharacters += upperCaseArray.join("");
+  }
+  //console.log(tempCharacters);
 
 
 
