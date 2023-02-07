@@ -172,18 +172,17 @@ function generatePassword() {
     }
     //console.log(tempCharacters)
   }
-
+  
+  //for loop--loops for the same number of times as the number of characters employee wants in their password. math.floor and math.random create random numbers or characters based on inputs chosen by employee.   
   for (var i = 0; i < pwLength; i++) {
     password += tempCharacters.charAt(
       Math.floor(Math.random() * tempCharacters.length)
     );
   }
+  // returning password
   return password;
 
 }
-
-
-
 
 
 
