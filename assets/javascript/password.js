@@ -139,7 +139,19 @@ function generatePassword() {
     tempCharacters += specialChar.join("");
   }
   //console.log(tempCharacters)
-
+    
+    while (
+      !wantsUpper &
+      !wantsLower &
+      !wantsNumbers &
+      !wantsSpecialCharacters
+    ) {
+      alert("You must choose at least one type of character");
+      wantsUpper = confirm("Would you like uppercase letters?");
+      if (wantsUpper) {
+        tempCharacters += upperCaseArray.join("");
+      }
+      //console.log(tempCharacters)
 
 // Write password to the #password input
 function writePassword() {
