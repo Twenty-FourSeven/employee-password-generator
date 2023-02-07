@@ -102,6 +102,7 @@ function generatePassword() {
   var password = "";
   var tempCharacters = "";
 
+    //ask employee to choose a password 8-128 characters in length
   var pwLength = prompt(
     "How long would you like your password to be? Please choose a value between 8 and 128 characters."
   );
