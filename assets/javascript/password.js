@@ -139,7 +139,7 @@ function generatePassword() {
     tempCharacters += specialChar.join("");
   }
   //console.log(tempCharacters)
-  
+
   // while loop--if employee does not choose any of the options, then notify them that they must choose at least one type of character.
   while (
     !wantsUpper &&
@@ -152,9 +152,8 @@ function generatePassword() {
     if (wantsUpper) {
       tempCharacters += upperCaseArray.join("");
     }
-    //console.log(tempCharacters)
-
-
+    //console.log(tempCharacters)   
+  }
 
 
 
