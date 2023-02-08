@@ -1,4 +1,4 @@
-# employee-password-generator
+# secure-it-password-generator
 
 ---
 
@@ -9,7 +9,7 @@ This application allows employees the ability to generate a secure random passwo
 
 ## Link to the Live Webpage
 
-https://twenty-fourseven.github.io/employee-password-generator/
+https://twenty-fourseven.github.io/secure-it-password-generator/
 
 ## Installation
 
