@@ -20,7 +20,7 @@ N/A
 Created by Thomas James.
 GitHub: https://github.com/Twenty-FourSeven
 
-The Starter Code was provided by EDX Bootcamps as part of the University of Washington full stack coding bootcamp.
+The Starter Code was provided by EDX Bootcamps as part of the University of Washington's full stack coding bootcamp.
 
 ## Usage
 
