@@ -20,12 +20,11 @@ N/A
 Created by Thomas James.
 GitHub: https://github.com/Twenty-FourSeven
 
-
+The Starter Code was provided by EDX Bootcamps as part of the University of Washington full stack coding bootcamp.
 
 ## Usage
 
-
-
+The aim of this website is to generate a randomized strong password in an effort to provide greater security of confidential data. Employees are able to output a password that contains one or more of the following characteristics: uppercase letters, lowercase letters, numbers, and special characters. 
 
 
 
